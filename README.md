@@ -21,7 +21,7 @@ Basic latex template for formal research or business whitepapers, discussion doc
 ### Linux Usage
 
 ```bash
-# Recommended fonts are required for compilition.
+# Recommended fonts are required for compilation.
 sudo apt-get install texlive-fonts-recommended
 ```
 
