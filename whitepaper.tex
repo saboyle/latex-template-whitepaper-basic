@@ -1,0 +1,101 @@
+\documentclass [10pt, fancyhdr, twoside] {article}
+
+\usepackage{float, graphicx, caption, amssymb, natbib}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{tabulary}
+\usepackage [left=2.5cm, top=2.5cm, bottom=2.5cm, right=3cm] {geometry}  %% see geometry.pdf on how to lay out the page. There's lots.
+\geometry{a4paper} %% or letter or a5paper or ... etc
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[left]{lineno}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+
+\renewcommand{\linenumberfont}{\normalfont\tiny\color{gray}}
+
+
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyfoot{}
+
+\fancyhead[RO,LE]{Heading}
+\fancyfoot[RO,LE]{Page-\thepage}
+\fancyfoot[C]{\textbf{Footer}}
+\fancyfoot[RE, LO]{Created: \today\ at \currenttime}
+
+\usepackage{blindtext}
+
+\newcounter {note}
+\stepcounter{note}
+
+\renewcommand{\abstractname}{Abstract Name}
+
+\newcommand {\Note} [1] {
+    \marginpar {
+        \tiny {
+            {\color{gray}{\thenote  \  #1}}
+            }
+        }
+    \stepcounter {note}
+}
+
+\newcommand {\MNote} [1] {
+    \marginpar {
+        \tiny {
+            {\color{gray}{#1 }}
+            }
+        }
+}
+
+\begin{document}
+
+\title{Title}
+\author {Author}
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+\linenumbers
+
+\section{Section}
+\subsection{Sub Section}
+\blindtext
+\Note{First Note}
+
+\subsection{Sub Section}
+\blindtext
+
+\subsection{Sub Section}
+\blindtext
+
+\subsection{Sub Section}
+\Note{Second Note}
+\blindtext
+
+\section{Section}
+\subsection{Sub Section}
+\blindtext
+\subsection{Sub Section}
+\blindtext
+\subsection{Sub Section}
+\blindtext
+
+\section{Section}
+\subsection{Sub Section}
+\blindtext
+\subsection{Sub Section}
+\blindtext
+\subsection{Sub Section}
+\blindtext
+\Note{Third Note}
+
+
+\end{document}
