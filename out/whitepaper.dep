@@ -1,0 +1,61 @@
+\RequireVersions{
+  *{application}{TeX}     {1990/03/25 v3.x}
+  *{format} {LaTeX2e}     {2016/02/01 v2.e}
+  *{package}{snapshot}    {2002/03/05 v1.14}
+  *{class}  {article}     {2014/09/29 v1.4h}
+  *{file}   {size10.clo}  {2014/09/29 v1.4h}
+  *{package}{float}       {2001/11/08 v1.3d}
+  *{package}{graphicx}    {2014/10/28 v1.0g}
+  *{package}{keyval}      {2014/10/28 v1.15}
+  *{package}{graphics}    {2016/01/03 v1.0q}
+  *{package}{trig}        {2016/01/03 v1.10}
+  *{file}   {graphics.cfg}{2010/04/23 v1.9}
+  *{file}   {pdftex.def}  {2011/05/27 v0.06d}
+  *{package}{infwarerr}   {2010/04/08 v1.3}
+  *{package}{ltxcmds}     {2011/11/09 v1.22}
+  *{package}{caption}     {2016/02/21 v3.3-144}
+  *{package}{caption3}    {2016/02/04 v1.7-139}
+  *{package}{amssymb}     {2013/01/14 v3.01}
+  *{package}{amsfonts}    {2013/01/14 v3.01}
+  *{package}{natbib}      {2010/09/13 v8.31b}
+  *{package}{color}       {1999/02/16 v0.0}
+  *{file}   {color.cfg}   {2007/01/18 v1.5}
+  *{file}   {dvipsnam.def}{2015/12/30 v3.0k}
+  *{package}{tabulary}    {2014/06/11 v0.10}
+  *{package}{array}       {2014/10/28 v2.4c}
+  *{package}{geometry}    {2010/09/12 v5.6}
+  *{package}{ifpdf}       {2011/01/30 v2.3}
+  *{package}{ifvtex}      {2010/03/01 v1.5}
+  *{package}{ifxetex}     {2010/09/12 v0.6}
+  *{package}{fancyhdr}    {0000/00/00 v0.0}
+  *{package}{xcolor}      {2007/01/21 v2.11}
+  *{file}   {color.cfg}   {2007/01/18 v1.5}
+  *{package}{helvet}      {2005/04/12 v9.2a}
+  *{package}{lineno}      {2005/11/02 v4.41}
+  *{package}{datetime}    {2015/03/20 v2.60}
+  *{package}{etoolbox}    {2015/08/02 v2.2a}
+  *{package}{fmtcount}    {2015/05/05 v3.01}
+  *{package}{ifthen}      {2014/09/29 v1.1c}
+  *{package}{xkeyval}     {2014/12/03 v2.7a}
+  *{file}   {xkeyval.tex} {2014/12/03 v2.7a}
+  *{package}{fcprefix}    {2012/09/28 v0.0}
+  *{package}{fcnumparser} {2012/09/28 v0.0}
+  *{package}{amsgen}      {1999/11/30 v2.0}
+  *{file}   {fc-english.def}{2013/08/17 v0.0}
+  *{package}{datetime-defaults}{2013/09/10 v0.0}
+  *{package}{blindtext}   {2012/01/06 v2.0}
+  *{package}{xspace}      {2014/10/28 v1.13}
+  *{file}   {ot1phv.fd}   {2001/06/04 v1/phv.}
+  *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
+  *{package}{pdftexcmds}  {2011/11/29 v0.20}
+  *{package}{ifluatex}    {2010/03/01 v1.3}
+  *{package}{epstopdf-base}{2010/02/09 v2.5}
+  *{package}{grfext}      {2010/08/19 v1.1}
+  *{package}{kvdefinekeys}{2011/04/07 v1.3}
+  *{package}{kvoptions}   {2011/06/30 v3.11}
+  *{package}{kvsetkeys}   {2012/04/25 v1.16}
+  *{package}{etexcmds}    {2011/02/16 v1.5}
+  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
+  *{file}   {umsa.fd}     {2013/01/14 v3.01}
+  *{file}   {umsb.fd}     {2013/01/14 v3.01}
+}
