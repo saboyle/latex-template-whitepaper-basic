@@ -18,6 +18,8 @@ Basic latex template for formal research or business whitepapers, discussion doc
 
 ## Notes
 
+For example [whitepaper.pdf](./out/whitepaper.pdf).
+
 ### Linux Usage
 
 ```bash
