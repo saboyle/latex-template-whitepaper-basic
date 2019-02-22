@@ -15,3 +15,13 @@ Basic latex template for formal research or business whitepapers, discussion doc
 * Boxed margin notes with auto wrap
 * Separate title sheet / toc / references 
 * Automated git tag inclusion
+
+## Notes
+
+### Linux Usage
+
+```bash
+# Recommended fonts are required for compilition.
+sudo apt-get install texlive-fonts-recommended
+```
+
