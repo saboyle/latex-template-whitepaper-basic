@@ -1,4 +1,4 @@
-\documentclass [10pt] {article}
+\documentclass [12pt] {article}
 \usepackage [inner=2cm, top=2.5cm, bottom=2.5cm, outer=4cm, marginparwidth=3cm] {geometry}  %% see geometry.pdf on how to lay out the page. There's lots.
 \geometry{a4paper} %% or letter or a5paper or ... etc
 
@@ -31,6 +31,8 @@
 {\color{tealgreen}\normalfont\normalsize\bfseries}
 {\color{tealgreen}\thesubsection}{1em}{}
 
+\usepackage {vhistory}
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em plus 0.1em minus 0.2em}
 
@@ -49,7 +51,7 @@
 \newcounter {note}
 \stepcounter{note}
 
-\renewcommand{\abstractname}{Abstract Name}
+\renewcommand{\abstractname}{Executive Summary}
 
 \newcommand {\Note} [1] {
     \marginpar {
@@ -70,7 +72,7 @@
 
 \begin{document}
 
-\title{Title}
+\title{Title \vhCurrentVersion}
 \author {Author}
 
 \date{\today}
@@ -79,8 +81,14 @@
 
 \begin{abstract}
 \blindtext
-
 \end{abstract}
+
+\vspace{6cm}
+\begin{versionhistory}
+    \vhEntry{v0.1}{21/03/2024}{Author}{First draft}
+    
+ \end{versionhistory}
+\clearpage
 
 %% Comment out this line to prevent the display of line numbers
 \linenumbers
