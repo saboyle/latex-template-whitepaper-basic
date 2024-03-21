@@ -1,20 +1,38 @@
-\RequirePackage{snapshot}
-\documentclass [10pt, fancyhdr, twoside] {article}
-\usepackage{float, graphicx, caption, amssymb, natbib}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{tabulary}
-\usepackage [left=2.5cm, top=2.5cm, bottom=2.5cm, right=3cm] {geometry}  %% see geometry.pdf on how to lay out the page. There's lots.
+\documentclass [10pt] {article}
+\usepackage [inner=2cm, top=2.5cm, bottom=2.5cm, outer=4cm, marginparwidth=3cm] {geometry}  %% see geometry.pdf on how to lay out the page. There's lots.
 \geometry{a4paper} %% or letter or a5paper or ... etc
+
+\usepackage{float, graphicx, caption, amssymb, natbib}
+
+\usepackage{xcolor}              %% enable use of colours
+\usepackage[dvipsnames]{xcolor}  %% enables creation of custom colours
+
+\usepackage{tabulary}
+
 \usepackage{fancyhdr}
-\usepackage{xcolor}
 \usepackage[scaled]{helvet}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 
+%% Line numbers may be useful during collaboration and review
 \usepackage[left]{lineno}
-\usepackage[yyyymmdd,hhmmss]{datetime}
-
 \renewcommand{\linenumberfont}{\normalfont\tiny\color{gray}}
 
+\usepackage[ddmmyyyy,hhmmss]{datetime}
+
+\definecolor{tealgreen}{RGB}{0, 102, 102}
+\definecolor{midnightgreen}{RGB}{0, 64, 77}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{midnightgreen}\normalfont\Large\bfseries}
+{\color{midnightgreen}\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{tealgreen}\normalfont\normalsize\bfseries}
+{\color{tealgreen}\thesubsection}{1em}{}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em plus 0.1em minus 0.2em}
 
 \pagestyle{fancy}
 
@@ -36,7 +54,7 @@
 \newcommand {\Note} [1] {
     \marginpar {
         \tiny {
-            {\color{gray}{\thenote  \  #1}}
+            {\color{tealgreen}{\thenote  \  #1}}
             }
         }
     \stepcounter {note}
@@ -45,7 +63,7 @@
 \newcommand {\MNote} [1] {
     \marginpar {
         \tiny {
-            {\color{gray}{#1 }}
+            {\color{tealgreen}{#1 }}
             }
         }
 }
@@ -61,13 +79,21 @@
 
 \begin{abstract}
 \blindtext
+
 \end{abstract}
 
+%% Comment out this line to prevent the display of line numbers
 \linenumbers
+
+\tableofcontents
+\pagebreak
 
 \section{Section}
 \subsection{Sub Section}
 \blindtext
+
+\blindtext
+
 \Note{First Note}
 
 \subsection{Sub Section}
@@ -94,8 +120,9 @@
 \subsection{Sub Section}
 \blindtext
 \subsection{Sub Section}
+
+\MNote {Third Note - just seeing whether it auto-wraps now alkdjfl adjfladj flajd flak dflkaj dlfkj alkdfj alkjd flakjdfla fl }
 \blindtext
-\Note{Third Note}
 
 
 \end{document}
