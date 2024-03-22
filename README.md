@@ -3,6 +3,8 @@ Basic latex template for formal research or business whitepapers, discussion doc
 
 ## Features
 * Fancy headers and footers
+* Custom colours for section titles
+* Revision history
 * Line numbers to assist with collaboration & comments
 * Numbered margin notes
 * Standard margin notes
